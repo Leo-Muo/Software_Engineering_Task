@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 @Entity
 @Data
@@ -19,6 +21,7 @@ public class Customer {
     private String lastname;
     private String email;
     private int serialNumber;
+    private LocalTime vistTime;
 
     //Setting up the relationship
     @ManyToOne
