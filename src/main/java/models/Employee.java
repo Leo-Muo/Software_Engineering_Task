@@ -25,7 +25,7 @@ public class Employee {
     private ServiceDepartment serviceDepartment;
     private Integer sdid; //ServiceDepartment ID
 
-    // Getting list of customers
+    // Getting list of customers who have a relationship with the same service department
     @OneToMany(mappedBy = "ServiceDepartment")
     private List<Customer> customersList;
 
