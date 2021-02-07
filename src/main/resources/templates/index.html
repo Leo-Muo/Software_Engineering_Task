@@ -41,7 +41,7 @@
     </section>
 
     <!--Specialist reservation-->
-    <section class="row text-center text-lg-left justify-content-md-center">
+    <form th:action="@{/reseve}" method="post" class="row text-center text-lg-left justify-content-md-center">
 
         <!--Specialist1-->
         <div class="col-lg-3 col-md-3 col-12 gx-5 card">
@@ -52,7 +52,7 @@
             </div>
             <h5 class="card-title mb-4">DENTIST</h5>
             <div id="collapse1" class="panel-collapse collapse in">
-                <div class="panel-body"><button type="button" class="btn btn-outline-primary">Reserve</button></div>
+                <div class="panel-body"><input type="submit" class="btn btn-outline-primary" name="DENTIST" value="Reserve"/></div>
             </div>
         </div>
 
@@ -65,7 +65,7 @@
             </div>
             <h5 class="card-title mb-4">CARDIOLOGIST</h5>
             <div id="collapse2" class="panel-collapse collapse in">
-                <div class="panel-body"><button type="button" class="btn btn-outline-primary">Reserve</button></div>
+                <div class="panel-body"><input type="submit" class="btn btn-outline-primary" name="CARDIOLOGIST" value="Reserve"/></div>
             </div>
         </div>
 
@@ -78,10 +78,23 @@
             </div>
             <h5 class="card-title mb-4">RADIOLOGIST</h5>
             <div id="collapse3" class="panel-collapse collapse in">
-                <div class="panel-body"><button type="button" class="btn btn-sm-2 btn-outline-primary">Reserve</button></div>
+                <div class="panel-body"><input type="submit" class="btn btn-outline-primary" name="RADIOLOGIST" value="Reserve"/></div>
             </div>
         </div>
-    </section>
+    </form>
+
+    <!--Cancel form-->
+    <form class="row row-cols-lg-auto g-3 align-items-center justify-content-md-center">
+        <div class="col-12 col-md-8">
+            <div class="input-group">
+                <input type="text" class="form-control" Placeholder="Reservation Code">
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <button type="submit" class="btn btn-primary" id="cancel">Cancel</button>
+        </div>
+    </form>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>

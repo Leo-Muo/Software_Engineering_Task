@@ -5,6 +5,8 @@ html,body
     padding: 0px;
     overflow-x: hidden;
 }
+
+/*------------- NAVBAR --------------*/
 .navbar{
     background-color:#0059d0;
 	padding:0 !important;
@@ -31,6 +33,7 @@ html,body
 	background-color:#fff;
 	outline:none;
 }
+
 
 /*------------- Banner --------------*/
 #banner{
@@ -67,4 +70,7 @@ html,body
 .btn{
 	padding: .375rem 20%;
 	margin-bottom: 15px;
+}
+#cancel{
+	margin-bottom:0;
 }
